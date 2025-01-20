@@ -1,0 +1,1 @@
+BondrixResource.Config = {}
