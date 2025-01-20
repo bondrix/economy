@@ -1,23 +1,21 @@
 # bondrix-resource
-Resource description goes here.
+A lightweight and optimized economy system for FiveM servers. Combines in-memory transaction handling with periodic MySQL syncing for high performance and reliable data persistence.
 
 ## Features
-- Feature here.
-- Another feature here.
+- Designed to support servers of any size, from small communities to large-scale roleplay environments.
+- Combines in-memory handling for frequent transactions with MySQL syncing.
 
 ## Dependencies
-- [bondrix-example-1](https://github.com/bondrix/bondrix-example-1)
-- [bondrix-example-2](https://github.com/bondrix/bondrix-example-2)
+- [oxmysql](https://github.com/overextended/oxmysql/)
 
 ## Installation
 ### Manual
+- Follow [OxMySQL](https://overextended.dev/oxmysql#installation)'s installation guide.
 - Download the script and put it in the `[bondrix]` or `resources` directory.
 - Add the following code to your `server.cfg`.
 ```
-ensure bondrix-example-1
-ensure bondrix-example-2
-ensure bondrix-resource
+ensure bondrix-economy
 ```
 
 ## Configuration
-Every configuration option along with its explainations can be found in [config.lua](https://github.com/bondrix/bondrix-resource/blob/main/src/shared/config.lua).
+Every configuration option along with its explainations can be found in [config.lua](https://github.com/bondrix/economy/blob/main/src/shared/config.lua).

@@ -1,15 +1,14 @@
 fx_version 'cerulean'
 game 'gta5'
 
-name 'bondrix-resource'
+name 'bondrix-economy'
 author 'Bondrix'
-description 'Resource description goes here.'
-repository 'https://github.com/bondrix/bondrix-resource'
+description 'A lightweight and optimized economy system for FiveM servers. Combines in-memory transaction handling with periodic MySQL syncing for high performance and reliable data persistence.'
+repository 'https://github.com/bondrix/economy'
 version '1.0.0'
 
 dependencies {
-    'bondrix-example-1',
-    'bondrix-example-2'
+    'oxmysql'
 }
 
 client_scripts {
@@ -20,5 +19,8 @@ shared_scripts {
     'shared/config.lua'
 }
 server_scripts {
-    'server/main.lua'
+    '@oxmysql/lib/MySQL.lua',
+    'server/main.lua',
+    'server/cash.lua',
+    'server/bank.lua'
 }

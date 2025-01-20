@@ -1,5 +1,5 @@
-BondrixResource = {}
+BondrixEconomy = {}
 
 exports('GetObject', function()
-    return BondrixResource
+    return BondrixEconomy
 end)
