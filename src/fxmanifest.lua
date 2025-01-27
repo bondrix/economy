@@ -8,7 +8,9 @@ repository 'https://github.com/bondrix/economy'
 version '1.0.0'
 
 dependencies {
-    'oxmysql'
+    'oxmysql',
+    'bondrix-lib',
+    'bondrix-inventory'
 }
 
 client_scripts {
@@ -20,7 +22,7 @@ shared_scripts {
 }
 server_scripts {
     '@oxmysql/lib/MySQL.lua',
-    'server/main.lua',
     'server/cash.lua',
-    'server/bank.lua'
+    'server/bank.lua',
+    'server/main.lua'
 }

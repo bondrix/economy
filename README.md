@@ -7,6 +7,8 @@ A lightweight and optimized economy system for FiveM servers. Combines in-memory
 
 ## Dependencies
 - [oxmysql](https://github.com/overextended/oxmysql/)
+- [bondrix-lib](https://github.com/bondrix/lib/)
+- [bondrix-inventory](https://github.com/bondrix/inventory/)
 
 ## Installation
 ### Manual
@@ -14,6 +16,8 @@ A lightweight and optimized economy system for FiveM servers. Combines in-memory
 - Download the script and put it in the `[bondrix]` or `resources` directory.
 - Add the following code to your `server.cfg`.
 ```
+ensure bondrix-lib
+ensure bondrix-inventory
 ensure bondrix-economy
 ```
 
